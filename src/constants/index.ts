@@ -150,20 +150,11 @@ export const ANTI_ADBLOCK_SELECTORS: readonly string[] = [
   '[class*="bb-overlay"]',
   '[id*="bb-overlay"]',
   '.bookmark-banner-x7m4q2',
-  'tp-yt-paper-dialog:has(#feedback.ytd-enforcement-message-view-model)',
   'ytd-enforcement-message-view-model',
 ];
 
-// YouTube-specific ad banner and overlay selectors
+// YouTube-specific ad banner and overlay selectors (strictly video ad containers, leaving search and UI unaffected)
 export const YOUTUBE_AD_SELECTORS: readonly string[] = [
-  'ytd-ad-slot-renderer',
-  '#masthead-ad',
-  'ytd-banner-promo-renderer',
-  'ytd-in-feed-ad-layout-renderer',
-  '.ytd-promoted-video-renderer',
-  '.ytd-promoted-sparkles-web-renderer',
-  '.ytd-display-ad-renderer',
-  'ytd-statement-banner-renderer',
   '.ytp-ad-overlay-container',
   '.ytp-ad-message-container',
   '#player-ads',

@@ -247,7 +247,7 @@ export class RedirectAndPopupProtector {
   }
 
   private reportProtectedEvent(type: string, destination?: string): void {
-    if (typeof chrome !== 'undefined' && chrome.runtime?.sendMessage) {
+    if (typeof chrome !== 'undefined' && chrome.runtime?.id && chrome.runtime?.sendMessage) {
       chrome.runtime.sendMessage({
         type,
         hostname: this.currentHostname,

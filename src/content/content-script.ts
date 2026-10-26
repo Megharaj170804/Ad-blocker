@@ -92,7 +92,7 @@ if (typeof window !== 'undefined') {
     const customEvent = event as CustomEvent<{ type: string; destination?: string }>;
     if (customEvent?.detail) {
       const { type, destination } = customEvent.detail;
-      if (typeof chrome !== 'undefined' && chrome.runtime?.sendMessage) {
+      if (typeof chrome !== 'undefined' && chrome.runtime?.id && chrome.runtime?.sendMessage) {
         if (type === 'popup_blocked') {
           chrome.runtime.sendMessage({
             type: MESSAGE_TYPES.REPORT_POPUP_BLOCKED,

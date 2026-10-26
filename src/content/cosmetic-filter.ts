@@ -321,7 +321,7 @@ export class CosmeticFilterEngine {
     const countToSend = this.pendingReportCount;
     this.pendingReportCount = 0;
 
-    if (typeof chrome !== 'undefined' && chrome.runtime?.sendMessage) {
+    if (typeof chrome !== 'undefined' && chrome.runtime?.id && chrome.runtime?.sendMessage) {
       chrome.runtime.sendMessage({
         type: MESSAGE_TYPES.REPORT_COSMETIC_BLOCKED,
         hostname: this.hostname,

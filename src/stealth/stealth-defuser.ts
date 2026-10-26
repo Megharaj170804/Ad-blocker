@@ -79,17 +79,19 @@ export function initStealthDefuser(): void {
     return KNOWN_REDIRECT_AND_POPUP_DOMAINS.some((domain) => lower.includes(domain));
   }
 
-  // 1. Spoof Anti-Adblock Global Bait Variables
+  // 1. Spoof Anti-Adblock Global Bait Variables (Bypassed on YouTube so native Google player scripts aren't tainted)
   try {
-    const win = window as unknown as Record<string, unknown>;
-    win.canRunAds = true;
-    win.isAdBlockActive = false;
-    win.adblock = false;
-    win.adBlockerDetected = false;
-    win.google_ad_client = STEALTH_CONFIG.SPOOFED_CLIENT_ID;
+    const isYouTube = typeof window !== 'undefined' && window.location.hostname.includes('youtube.com');
+    if (!isYouTube) {
+      const win = window as unknown as Record<string, unknown>;
+      win.canRunAds = true;
+      win.isAdBlockActive = false;
+      win.adblock = false;
+      win.adBlockerDetected = false;
+      win.google_ad_client = STEALTH_CONFIG.SPOOFED_CLIENT_ID;
 
-    // Spoof adsbygoogle with a smart mock that marks ad units loaded
-    const fakeAdsByGoogle: unknown[] = [];
+      // Spoof adsbygoogle with a smart mock that marks ad units loaded
+      const fakeAdsByGoogle: unknown[] = [];
     const pushMock = function (...args: unknown[]) {
       try {
         const pending = document.querySelectorAll('ins.adsbygoogle:not([data-adsbygoogle-status])');
@@ -107,13 +109,14 @@ export function initStealthDefuser(): void {
       configurable: true,
     });
 
-    Object.defineProperty(fakeAdsByGoogle, 'push', {
-      value: pushMock,
-      writable: true,
-      configurable: true,
-    });
-    (fakeAdsByGoogle as unknown as { loaded?: boolean }).loaded = true;
-    win.adsbygoogle = fakeAdsByGoogle;
+      Object.defineProperty(fakeAdsByGoogle, 'push', {
+        value: pushMock,
+        writable: true,
+        configurable: true,
+      });
+      (fakeAdsByGoogle as unknown as { loaded?: boolean }).loaded = true;
+      win.adsbygoogle = fakeAdsByGoogle;
+    }
   } catch {
     // Fail-safe
   }
