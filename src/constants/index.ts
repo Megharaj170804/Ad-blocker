@@ -169,11 +169,22 @@ export const YOUTUBE_AD_SELECTORS: readonly string[] = [
   '#player-ads',
 ];
 
-// YouTube Video Ad Acceleration Constants
+// YouTube Video Ad Acceleration & Instant Skip Constants
 export const YOUTUBE_CONFIG = {
   FAST_FORWARD_RATE: 16.0,
   NORMAL_PLAYBACK_RATE: 1.0,
-  POLL_INTERVAL_MS: 250,
+  POLL_INTERVAL_MS: 50,
+  DURATION_END_OFFSET_SECONDS: 0.1,
+  SKIP_BUTTON_SELECTORS: [
+    '.ytp-ad-skip-button',
+    '.ytp-ad-skip-button-modern',
+    '.ytp-skip-ad-button',
+    '.ytp-ad-skip-button-text',
+    'button.ytp-ad-skip-button',
+    'button[aria-label*="Skip ad" i]',
+    'button[aria-label*="Skip" i]',
+    '.ytp-ad-overlay-close-button',
+  ],
 } as const;
 
 // Selectors for legitimate content/download containers that anti-adblock scripts hide

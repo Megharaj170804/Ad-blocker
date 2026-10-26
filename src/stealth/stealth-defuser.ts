@@ -177,6 +177,30 @@ export function initStealthDefuser(): void {
   } catch {
     // Fail-safe
   }
+
+  // 4. YouTube Instant Skip via Page-World Player Object
+  if (typeof window !== 'undefined' && window.location.hostname.includes('youtube.com')) {
+    const skipPageWorldAds = () => {
+      try {
+        const player = (document.getElementById('movie_player') ||
+          document.querySelector('.html5-video-player')) as (HTMLElement & {
+          skipAd?: () => void;
+          cancelPlayback?: () => void;
+        }) | null;
+
+        if (player && typeof player.skipAd === 'function') {
+          const adShowing = document.querySelector('.ad-showing, .ad-interrupting');
+          if (adShowing) {
+            player.skipAd();
+          }
+        }
+      } catch {
+        // Fail-safe
+      }
+    };
+
+    window.setInterval(skipPageWorldAds, 100);
+  }
 }
 
 // Auto-execute if in browser environment
