@@ -8,7 +8,6 @@
     "condition": {
       "urlFilter": "||a-ads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -29,7 +28,6 @@
     "condition": {
       "urlFilter": "||a.lenovo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -50,7 +48,6 @@
     "condition": {
       "urlFilter": "||ad-delivery.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -71,7 +68,6 @@
     "condition": {
       "urlFilter": "||ad-score.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -92,7 +88,6 @@
     "condition": {
       "urlFilter": "||ad.lgappstv.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -113,7 +108,6 @@
     "condition": {
       "urlFilter": "||adbit.co^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -134,7 +128,6 @@
     "condition": {
       "urlFilter": "||adcash.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -155,7 +148,6 @@
     "condition": {
       "urlFilter": "||adlog.vivo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -176,7 +168,6 @@
     "condition": {
       "urlFilter": "||admaven.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -197,7 +188,6 @@
     "condition": {
       "urlFilter": "||adoperator.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -218,7 +208,6 @@
     "condition": {
       "urlFilter": "||ads-api.vivo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -239,7 +228,6 @@
     "condition": {
       "urlFilter": "||ads.huawei.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -260,7 +248,6 @@
     "condition": {
       "urlFilter": "||ads.roku.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -281,7 +268,6 @@
     "condition": {
       "urlFilter": "||ads.vizio.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -302,7 +288,6 @@
     "condition": {
       "urlFilter": "||adsfs.oppomobile.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -323,7 +308,6 @@
     "condition": {
       "urlFilter": "||adsterra.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -344,7 +328,6 @@
     "condition": {
       "urlFilter": "||advertising.apple.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -365,7 +348,6 @@
     "condition": {
       "urlFilter": "||adx.ads.oppomobile.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -386,7 +368,6 @@
     "condition": {
       "urlFilter": "||amoeba.web.roku.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -407,7 +388,6 @@
     "condition": {
       "urlFilter": "||analytics-api.samsunghealthcn.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -428,7 +408,6 @@
     "condition": {
       "urlFilter": "||api-adservices.apple.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -449,7 +428,6 @@
     "condition": {
       "urlFilter": "||api.ad.xiaomi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -470,7 +448,6 @@
     "condition": {
       "urlFilter": "||app.usercentrics.eu^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -491,7 +468,6 @@
     "condition": {
       "urlFilter": "||bdapi-ads.realmemobile.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -512,7 +488,6 @@
     "condition": {
       "urlFilter": "||bdapi-in-ads.realmemobile.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -533,7 +508,6 @@
     "condition": {
       "urlFilter": "||bidvertiser.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -554,7 +528,6 @@
     "condition": {
       "urlFilter": "||books-analytics-events.apple.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -575,7 +548,6 @@
     "condition": {
       "urlFilter": "||browser.events.data.msn.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -596,7 +568,6 @@
     "condition": {
       "urlFilter": "||cdn.cookielaw.org^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -617,7 +588,6 @@
     "condition": {
       "urlFilter": "||cdn.privacy-mgmt.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -638,7 +608,6 @@
     "condition": {
       "urlFilter": "||cissoiddownset.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -659,7 +628,6 @@
     "condition": {
       "urlFilter": "||ck.ads.oppomobile.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -680,7 +648,6 @@
     "condition": {
       "urlFilter": "||click.oneplus.cn^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -701,7 +668,6 @@
     "condition": {
       "urlFilter": "||clickadu.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -722,7 +688,6 @@
     "condition": {
       "urlFilter": "||clickaine.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -743,7 +708,6 @@
     "condition": {
       "urlFilter": "||cmp.inmobi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -764,7 +728,6 @@
     "condition": {
       "urlFilter": "||cmp.osano.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -785,7 +748,6 @@
     "condition": {
       "urlFilter": "||cmp.usercentrics.eu^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -806,7 +768,6 @@
     "condition": {
       "urlFilter": "||coinimp.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -827,7 +788,6 @@
     "condition": {
       "urlFilter": "||config.samsungads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -848,7 +808,6 @@
     "condition": {
       "urlFilter": "||consent.cookiebot.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -869,7 +828,6 @@
     "condition": {
       "urlFilter": "||consent.trustarc.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -890,7 +848,6 @@
     "condition": {
       "urlFilter": "||consentcdn.cookiebot.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -911,7 +868,6 @@
     "condition": {
       "urlFilter": "||cookiebot.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -932,7 +888,6 @@
     "condition": {
       "urlFilter": "||cpmstar.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -953,7 +908,6 @@
     "condition": {
       "urlFilter": "||data.ads.oppomobile.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -974,7 +928,6 @@
     "condition": {
       "urlFilter": "||data.mistat.india.xiaomi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -995,7 +948,6 @@
     "condition": {
       "urlFilter": "||data.mistat.rus.xiaomi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1016,7 +968,6 @@
     "condition": {
       "urlFilter": "||data.mistat.xiaomi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1037,7 +988,6 @@
     "condition": {
       "urlFilter": "||deloton.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1058,7 +1008,6 @@
     "condition": {
       "urlFilter": "||device-metrics-us-2.amazon.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1079,7 +1028,6 @@
     "condition": {
       "urlFilter": "||device-metrics-us.amazon.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1100,7 +1048,6 @@
     "condition": {
       "urlFilter": "||directrev.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1121,7 +1068,6 @@
     "condition": {
       "urlFilter": "||effectivecpmgate.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1142,7 +1088,6 @@
     "condition": {
       "urlFilter": "||evadav.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1163,7 +1108,6 @@
     "condition": {
       "urlFilter": "||exoclick.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1184,7 +1128,6 @@
     "condition": {
       "urlFilter": "||firebase-settings.crashlytics.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1205,7 +1148,6 @@
     "condition": {
       "urlFilter": "||fundingchoicesmessages.google.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1226,7 +1168,6 @@
     "condition": {
       "urlFilter": "||geolocation.onetrust.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1247,7 +1188,6 @@
     "condition": {
       "urlFilter": "||globalapi.ad.xiaomi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1268,7 +1208,6 @@
     "condition": {
       "urlFilter": "||grs.hicloud.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1289,7 +1228,6 @@
     "condition": {
       "urlFilter": "||highcpmgate.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1310,7 +1248,6 @@
     "condition": {
       "urlFilter": "||hilltopads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1331,7 +1268,6 @@
     "condition": {
       "urlFilter": "||iadsdk.apple.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1352,7 +1288,6 @@
     "condition": {
       "urlFilter": "||info.lgsmartad.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1373,7 +1308,6 @@
     "condition": {
       "urlFilter": "||iot-eu-logser.realme.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1394,7 +1328,6 @@
     "condition": {
       "urlFilter": "||iot-logser.realme.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1415,7 +1348,6 @@
     "condition": {
       "urlFilter": "||juicyads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1436,7 +1368,6 @@
     "condition": {
       "urlFilter": "||linkvertise.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1457,7 +1388,6 @@
     "condition": {
       "urlFilter": "||logbak.hicloud.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1478,7 +1408,6 @@
     "condition": {
       "urlFilter": "||logs.roku.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1499,7 +1428,6 @@
     "condition": {
       "urlFilter": "||logservice.hicloud.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1520,7 +1448,6 @@
     "condition": {
       "urlFilter": "||logservice1.hicloud.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1541,7 +1468,6 @@
     "condition": {
       "urlFilter": "||mads-eu.amazon.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1562,7 +1488,6 @@
     "condition": {
       "urlFilter": "||metrics.apple.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1583,7 +1508,6 @@
     "condition": {
       "urlFilter": "||metrics.data.hicloud.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1604,7 +1528,6 @@
     "condition": {
       "urlFilter": "||metrics.icloud.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1625,7 +1548,6 @@
     "condition": {
       "urlFilter": "||metrics.mzstatic.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1646,7 +1568,6 @@
     "condition": {
       "urlFilter": "||metrics2.data.hicloud.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1667,7 +1588,6 @@
     "condition": {
       "urlFilter": "||mineralt.io^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1688,7 +1608,6 @@
     "condition": {
       "urlFilter": "||minero.cc^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1709,7 +1628,6 @@
     "condition": {
       "urlFilter": "||monerominer.rocks^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1730,7 +1648,6 @@
     "condition": {
       "urlFilter": "||monetag.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1751,7 +1668,6 @@
     "condition": {
       "urlFilter": "||ngfts.lge.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1772,7 +1688,6 @@
     "condition": {
       "urlFilter": "||nmetrics.samsung.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1793,7 +1708,6 @@
     "condition": {
       "urlFilter": "||notes-analytics-events.apple.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1814,7 +1728,6 @@
     "condition": {
       "urlFilter": "||onclickalgo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1835,7 +1748,6 @@
     "condition": {
       "urlFilter": "||onclickperformance.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1856,7 +1768,6 @@
     "condition": {
       "urlFilter": "||onesignal.com/sdks/*",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1877,7 +1788,6 @@
     "condition": {
       "urlFilter": "||open.oneplus.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1898,7 +1808,6 @@
     "condition": {
       "urlFilter": "||popads.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1919,7 +1828,6 @@
     "condition": {
       "urlFilter": "||popcash.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1940,7 +1848,6 @@
     "condition": {
       "urlFilter": "||popmyads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1961,7 +1868,6 @@
     "condition": {
       "urlFilter": "||privacyportal.onetrust.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1982,7 +1888,6 @@
     "condition": {
       "urlFilter": "||propellerads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2003,7 +1908,6 @@
     "condition": {
       "urlFilter": "||ptgnwm.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2024,7 +1928,6 @@
     "condition": {
       "urlFilter": "||pushassist.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2045,7 +1948,6 @@
     "condition": {
       "urlFilter": "||realsrv.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2066,7 +1968,6 @@
     "condition": {
       "urlFilter": "||revenuehits.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2087,7 +1988,6 @@
     "condition": {
       "urlFilter": "||richads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2108,7 +2008,6 @@
     "condition": {
       "urlFilter": "||samsung-com.112.2o7.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2129,7 +2028,6 @@
     "condition": {
       "urlFilter": "||samsungads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2150,7 +2048,6 @@
     "condition": {
       "urlFilter": "||sdk.privacy-center.org^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2171,7 +2068,6 @@
     "condition": {
       "urlFilter": "||sdkconfig.ad.intl.xiaomi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2192,7 +2088,6 @@
     "condition": {
       "urlFilter": "||sdkconfig.ad.xiaomi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2213,7 +2108,6 @@
     "condition": {
       "urlFilter": "||settings-win.data.microsoft.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2234,7 +2128,6 @@
     "condition": {
       "urlFilter": "||smartclip.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2255,7 +2148,6 @@
     "condition": {
       "urlFilter": "||smartclip.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2276,7 +2168,6 @@
     "condition": {
       "urlFilter": "||smetrics.samsung.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2297,7 +2188,6 @@
     "condition": {
       "urlFilter": "||sourcepoint.mgr.consensu.org^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2318,7 +2208,6 @@
     "condition": {
       "urlFilter": "||statdynamic.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2339,7 +2228,6 @@
     "condition": {
       "urlFilter": "||telemetry.microsoft.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2360,7 +2248,6 @@
     "condition": {
       "urlFilter": "||tr.iadsdk.apple.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2381,7 +2268,6 @@
     "condition": {
       "urlFilter": "||tracking.miui.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2402,7 +2288,6 @@
     "condition": {
       "urlFilter": "||tracking.rus.miui.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2423,7 +2308,6 @@
     "condition": {
       "urlFilter": "||traffichaus.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2444,7 +2328,6 @@
     "condition": {
       "urlFilter": "||trafficjunky.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2465,7 +2348,6 @@
     "condition": {
       "urlFilter": "||trafficjunky.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2486,7 +2368,6 @@
     "condition": {
       "urlFilter": "||tvinteractive.tv^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2507,7 +2388,6 @@
     "condition": {
       "urlFilter": "||tvpixel.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2528,7 +2408,6 @@
     "condition": {
       "urlFilter": "||us.ibs.lgappstv.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2549,7 +2428,6 @@
     "condition": {
       "urlFilter": "||us.info.lgsmartad.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2570,7 +2448,6 @@
     "condition": {
       "urlFilter": "||vidoomy.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2591,7 +2468,6 @@
     "condition": {
       "urlFilter": "||vortex-win.data.microsoft.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2612,7 +2488,6 @@
     "condition": {
       "urlFilter": "||vortex.data.microsoft.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2633,7 +2508,6 @@
     "condition": {
       "urlFilter": "||watson.telemetry.microsoft.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2654,7 +2528,6 @@
     "condition": {
       "urlFilter": "||webminepool.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2675,7 +2548,6 @@
     "condition": {
       "urlFilter": "||www.coinimp.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2696,7 +2568,6 @@
     "condition": {
       "urlFilter": "||xp.apple.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2717,7 +2588,6 @@
     "condition": {
       "urlFilter": "||yllix.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2738,7 +2608,6 @@
     "condition": {
       "urlFilter": "||yumenetworks.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2759,7 +2628,6 @@
     "condition": {
       "urlFilter": "||zeroredirect1.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",

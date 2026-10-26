@@ -11,7 +11,6 @@ const testDataPath = path.resolve(__dirname, 'test_hosts_full.json');
 const testData = JSON.parse(fs.readFileSync(testDataPath, 'utf8'));
 
 const RESOURCE_TYPES = [
-  'main_frame',
   'sub_frame',
   'script',
   'image',

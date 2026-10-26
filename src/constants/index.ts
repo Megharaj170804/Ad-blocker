@@ -103,12 +103,37 @@ export const KNOWN_REDIRECT_AND_POPUP_DOMAINS: readonly string[] = [
   'vr.cissoiddownset.com',
 ];
 
-// Display Ad Campaign & Click Tracker URL Patterns
+// Display Ad Campaign & Click Tracker URL Patterns (Targeting paid ad networks, not user search)
 export const AD_CAMPAIGN_PARAM_PATTERNS: readonly RegExp[] = [
-  /[?&]utm_medium=(display|cpc|banner|affiliate)/i,
+  /[?&]utm_medium=(display|cpc|banner)/i,
   /[?&]utm_source=([^&]+)&utm_medium=display/i,
-  /[?&](aff_id|affid|clickid|ad_id|adid|gclid|fbclid)=/i,
+  /[?&](aff_id|clickid)=/i,
 ];
+
+// Essential productivity, AI, and developer domains that must NEVER be blocked or interfered with
+export const ESSENTIAL_PRODUCTIVITY_DOMAINS: readonly string[] = [
+  'chatgpt.com',
+  'openai.com',
+  'oaistatic.com',
+  'oaiusercontent.com',
+  'anthropic.com',
+  'claude.ai',
+  'github.com',
+  'google.com',
+  'accounts.google.com',
+  'docs.google.com',
+  'drive.google.com',
+  'microsoft.com',
+  'apple.com',
+];
+
+export function isProtectedDomain(hostname: string): boolean {
+  if (!hostname) return false;
+  const clean = hostname.trim().toLowerCase().replace(/^www\./, '');
+  return ESSENTIAL_PRODUCTIVITY_DOMAINS.some(
+    (domain) => clean === domain || clean.endsWith(`.${domain}`)
+  );
+}
 
 // Selectors for Anti-Adblock banners and warning modals
 export const ANTI_ADBLOCK_SELECTORS: readonly string[] = [

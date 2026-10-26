@@ -8,7 +8,6 @@
     "condition": {
       "urlFilter": "||2975c.v.fwmrm.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -29,7 +28,6 @@
     "condition": {
       "urlFilter": "||a.teads.tv^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -50,7 +48,6 @@
     "condition": {
       "urlFilter": "||aan.amazon.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -71,7 +68,6 @@
     "condition": {
       "urlFilter": "||aax.amazon-adsystem.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -92,7 +88,6 @@
     "condition": {
       "urlFilter": "||acdn.adnxs.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -113,7 +108,6 @@
     "condition": {
       "urlFilter": "||ad.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -134,7 +128,6 @@
     "condition": {
       "urlFilter": "||ad.gt^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -155,7 +148,6 @@
     "condition": {
       "urlFilter": "||adc3-launch.adcolony.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -176,7 +168,6 @@
     "condition": {
       "urlFilter": "||adclick.g.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -197,7 +188,6 @@
     "condition": {
       "urlFilter": "||adcolony.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -218,7 +208,6 @@
     "condition": {
       "urlFilter": "||adfox.yandex.ru^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -239,7 +228,6 @@
     "condition": {
       "urlFilter": "||adfstat.yandex.ru^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -260,7 +248,6 @@
     "condition": {
       "urlFilter": "||adnxs.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -281,7 +268,6 @@
     "condition": {
       "urlFilter": "||adroll.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -302,7 +288,6 @@
     "condition": {
       "urlFilter": "||ads.microsoft.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -323,7 +308,6 @@
     "condition": {
       "urlFilter": "||ads.pubmatic.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -344,7 +328,6 @@
     "condition": {
       "urlFilter": "||ads.stickyadstv.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -365,7 +348,6 @@
     "condition": {
       "urlFilter": "||ads.tremorhub.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -386,7 +368,6 @@
     "condition": {
       "urlFilter": "||ads.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -407,7 +388,6 @@
     "condition": {
       "urlFilter": "||ads.youtube.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -428,7 +408,6 @@
     "condition": {
       "urlFilter": "||ads30.adcolony.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -449,7 +428,6 @@
     "condition": {
       "urlFilter": "||adserver.unityads.unity3d.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -470,7 +448,6 @@
     "condition": {
       "urlFilter": "||adservetx.media.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -491,7 +468,6 @@
     "condition": {
       "urlFilter": "||adservice.google.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -512,7 +488,6 @@
     "condition": {
       "urlFilter": "||adsrvr.org^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -533,7 +508,6 @@
     "condition": {
       "urlFilter": "||adtago.s3.amazonaws.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -554,7 +528,6 @@
     "condition": {
       "urlFilter": "||adtech.yahooinc.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -575,7 +548,6 @@
     "condition": {
       "urlFilter": "||advertising-api-eu.amazon.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -596,7 +568,6 @@
     "condition": {
       "urlFilter": "||advertising.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -617,7 +588,6 @@
     "condition": {
       "urlFilter": "||advertising.yandex.ru^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -638,7 +608,6 @@
     "condition": {
       "urlFilter": "||advice-ads.s3.amazonaws.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -659,7 +628,6 @@
     "condition": {
       "urlFilter": "||afs.googlesyndication.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -680,7 +648,6 @@
     "condition": {
       "urlFilter": "||amazon-adsystem.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -701,7 +668,6 @@
     "condition": {
       "urlFilter": "||analytics.query.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -722,7 +688,6 @@
     "condition": {
       "urlFilter": "||analytics.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -743,7 +708,6 @@
     "condition": {
       "urlFilter": "||analyticsengine.s3.amazonaws.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -764,7 +728,6 @@
     "condition": {
       "urlFilter": "||apex.go.sonobi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -785,7 +748,6 @@
     "condition": {
       "urlFilter": "||api.fyber.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -806,7 +768,6 @@
     "condition": {
       "urlFilter": "||api.taboola.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -827,7 +788,6 @@
     "condition": {
       "urlFilter": "||api.vungle.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -848,7 +808,6 @@
     "condition": {
       "urlFilter": "||applovin.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -869,7 +828,6 @@
     "condition": {
       "urlFilter": "||appmetrica.yandex.ru^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -890,7 +848,6 @@
     "condition": {
       "urlFilter": "||as.casalemedia.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -911,7 +868,6 @@
     "condition": {
       "urlFilter": "||auction.unityads.unity3d.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -932,7 +888,6 @@
     "condition": {
       "urlFilter": "||bat.bing.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -953,7 +908,6 @@
     "condition": {
       "urlFilter": "||bea4.v.fwmrm.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -974,7 +928,6 @@
     "condition": {
       "urlFilter": "||bidder.criteo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -995,7 +948,6 @@
     "condition": {
       "urlFilter": "||bidswitch.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1016,7 +968,6 @@
     "condition": {
       "urlFilter": "||bingads.microsoft.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1037,7 +988,6 @@
     "condition": {
       "urlFilter": "||c.amazon-adsystem.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1058,7 +1008,6 @@
     "condition": {
       "urlFilter": "||c.bing.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1079,7 +1028,6 @@
     "condition": {
       "urlFilter": "||c.gumgum.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1100,7 +1048,6 @@
     "condition": {
       "urlFilter": "||capi.connatix.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1121,7 +1068,6 @@
     "condition": {
       "urlFilter": "||carbonads.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1142,7 +1088,6 @@
     "condition": {
       "urlFilter": "||casalemedia.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1163,7 +1108,6 @@
     "condition": {
       "urlFilter": "||cd.connatix.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1184,7 +1128,6 @@
     "condition": {
       "urlFilter": "||cdn.doubleverify.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1205,7 +1148,6 @@
     "condition": {
       "urlFilter": "||cdn.indexexchange.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1226,7 +1168,6 @@
     "condition": {
       "urlFilter": "||cdn.kargo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1247,7 +1188,6 @@
     "condition": {
       "urlFilter": "||cdn.mgid.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1268,7 +1208,6 @@
     "condition": {
       "urlFilter": "||cdn.taboola.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1289,7 +1228,6 @@
     "condition": {
       "urlFilter": "||cdn.teads.tv^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1310,7 +1248,6 @@
     "condition": {
       "urlFilter": "||cm.g.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1331,7 +1268,6 @@
     "condition": {
       "urlFilter": "||config.unityads.unity3d.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1352,7 +1288,6 @@
     "condition": {
       "urlFilter": "||contextual.media.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1373,7 +1308,6 @@
     "condition": {
       "urlFilter": "||contextweb.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1394,7 +1328,6 @@
     "condition": {
       "urlFilter": "||criteo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1415,7 +1348,6 @@
     "condition": {
       "urlFilter": "||d.adroll.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1436,7 +1368,6 @@
     "condition": {
       "urlFilter": "||d.applovin.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1457,7 +1388,6 @@
     "condition": {
       "urlFilter": "||dai.google.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1478,7 +1408,6 @@
     "condition": {
       "urlFilter": "||dis.criteo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1499,7 +1428,6 @@
     "condition": {
       "urlFilter": "||doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1520,7 +1448,6 @@
     "condition": {
       "urlFilter": "||doubleverify.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1541,7 +1468,6 @@
     "condition": {
       "urlFilter": "||eb2.3lift.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1562,7 +1488,6 @@
     "condition": {
       "urlFilter": "||events3alt.adcolony.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1583,7 +1508,6 @@
     "condition": {
       "urlFilter": "||extmaps-api.yandex.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1604,7 +1528,6 @@
     "condition": {
       "urlFilter": "||fastlane.rubiconproject.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1625,7 +1548,6 @@
     "condition": {
       "urlFilter": "||fls-na.amazon.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1646,7 +1568,6 @@
     "condition": {
       "urlFilter": "||fw.adsafeprotected.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1667,7 +1588,6 @@
     "condition": {
       "urlFilter": "||g.jwpsrv.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1688,7 +1608,6 @@
     "condition": {
       "urlFilter": "||gemini.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1709,7 +1628,6 @@
     "condition": {
       "urlFilter": "||geo.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1730,7 +1648,6 @@
     "condition": {
       "urlFilter": "||googleads.g.doubleclick.net/pagead/ads^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1751,7 +1668,6 @@
     "condition": {
       "urlFilter": "||googleads.g.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1772,7 +1688,6 @@
     "condition": {
       "urlFilter": "||googleads4.g.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1793,7 +1708,6 @@
     "condition": {
       "urlFilter": "||googleadservices.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1814,7 +1728,6 @@
     "condition": {
       "urlFilter": "||googlesyndication.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1835,7 +1748,6 @@
     "condition": {
       "urlFilter": "||googletagservices.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1856,7 +1768,6 @@
     "condition": {
       "urlFilter": "||gum.criteo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1877,7 +1788,6 @@
     "condition": {
       "urlFilter": "||hbopenbid.pubmatic.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1898,7 +1808,6 @@
     "condition": {
       "urlFilter": "||htlb.casalemedia.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1919,7 +1828,6 @@
     "condition": {
       "urlFilter": "||htlbid.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1940,7 +1848,6 @@
     "condition": {
       "urlFilter": "||ib.adnxs.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1961,7 +1868,6 @@
     "condition": {
       "urlFilter": "||image6.pubmatic.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -1982,7 +1888,6 @@
     "condition": {
       "urlFilter": "||images.taboola.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2003,7 +1908,6 @@
     "condition": {
       "urlFilter": "||indexexchange.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2024,7 +1928,6 @@
     "condition": {
       "urlFilter": "||init.supersonicads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2045,7 +1948,6 @@
     "condition": {
       "urlFilter": "||inmobi.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2066,7 +1968,6 @@
     "condition": {
       "urlFilter": "||insightexpressai.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2087,7 +1988,6 @@
     "condition": {
       "urlFilter": "||insights.adsrvr.org^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2108,7 +2008,6 @@
     "condition": {
       "urlFilter": "||ir-na.amazon-adsystem.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2129,7 +2028,6 @@
     "condition": {
       "urlFilter": "||ironsource.mobi^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2150,7 +2048,6 @@
     "condition": {
       "urlFilter": "||liftoff.io^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2171,7 +2068,6 @@
     "condition": {
       "urlFilter": "||live.chartboost.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2192,7 +2088,6 @@
     "condition": {
       "urlFilter": "||log.fc.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2213,7 +2108,6 @@
     "condition": {
       "urlFilter": "||log.outbrain.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2234,7 +2128,6 @@
     "condition": {
       "urlFilter": "||m.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2255,7 +2148,6 @@
     "condition": {
       "urlFilter": "||match.adsrvr.org^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2276,7 +2168,6 @@
     "condition": {
       "urlFilter": "||mc.yandex.ru^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2297,7 +2188,6 @@
     "condition": {
       "urlFilter": "||media.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2318,7 +2208,6 @@
     "condition": {
       "urlFilter": "||mediavisor.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2339,7 +2228,6 @@
     "condition": {
       "urlFilter": "||metrics.brightcove.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2360,7 +2248,6 @@
     "condition": {
       "urlFilter": "||metrika.yandex.ru^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2381,7 +2268,6 @@
     "condition": {
       "urlFilter": "||mgid.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2402,7 +2288,6 @@
     "condition": {
       "urlFilter": "||ms.applovin.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2423,7 +2308,6 @@
     "condition": {
       "urlFilter": "||mssl.fwmrm.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2444,7 +2328,6 @@
     "condition": {
       "urlFilter": "||nr.taboola.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2465,7 +2348,6 @@
     "condition": {
       "urlFilter": "||oas.openx.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2486,7 +2368,6 @@
     "condition": {
       "urlFilter": "||odb.outbrain.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2507,7 +2388,6 @@
     "condition": {
       "urlFilter": "||offerwall.yandex.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2528,7 +2408,6 @@
     "condition": {
       "urlFilter": "||onclickads.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2549,7 +2428,6 @@
     "condition": {
       "urlFilter": "||openx.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2570,7 +2448,6 @@
     "condition": {
       "urlFilter": "||optimized-by.rubiconproject.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2591,7 +2468,6 @@
     "condition": {
       "urlFilter": "||outbrain.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2612,7 +2488,6 @@
     "condition": {
       "urlFilter": "||outcome-ssp.supersonicads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2633,7 +2508,6 @@
     "condition": {
       "urlFilter": "||pagead.l.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2654,7 +2528,6 @@
     "condition": {
       "urlFilter": "||pagead2.googleadservices.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2675,7 +2548,6 @@
     "condition": {
       "urlFilter": "||pagead2.googlesyndication.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2696,7 +2568,6 @@
     "condition": {
       "urlFilter": "||pangleglobal.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2717,7 +2588,6 @@
     "condition": {
       "urlFilter": "||partnerads.ysm.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2738,7 +2608,6 @@
     "condition": {
       "urlFilter": "||pixel.adsafeprotected.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2759,7 +2628,6 @@
     "condition": {
       "urlFilter": "||pixel.rubiconproject.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2780,7 +2648,6 @@
     "condition": {
       "urlFilter": "||popads.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2801,7 +2668,6 @@
     "condition": {
       "urlFilter": "||prd.jwpltx.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2822,7 +2688,6 @@
     "condition": {
       "urlFilter": "||prebid.adnxs.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2843,7 +2708,6 @@
     "condition": {
       "urlFilter": "||propellerads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2864,7 +2728,6 @@
     "condition": {
       "urlFilter": "||propellerclick.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2885,7 +2748,6 @@
     "condition": {
       "urlFilter": "||pubads.g.doubleclick.net/gampad/ads^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2906,7 +2768,6 @@
     "condition": {
       "urlFilter": "||pubads.g.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2927,7 +2788,6 @@
     "condition": {
       "urlFilter": "||pubmatic.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2948,7 +2808,6 @@
     "condition": {
       "urlFilter": "||rcm-na.amazon-adsystem.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2969,7 +2828,6 @@
     "condition": {
       "urlFilter": "||redirector.googlevideo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -2990,7 +2848,6 @@
     "condition": {
       "urlFilter": "||rt.applovin.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3011,7 +2868,6 @@
     "condition": {
       "urlFilter": "||rtb.openx.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3032,7 +2888,6 @@
     "condition": {
       "urlFilter": "||rubiconproject.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3053,7 +2908,6 @@
     "condition": {
       "urlFilter": "||s.adroll.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3074,7 +2928,6 @@
     "condition": {
       "urlFilter": "||s.innovid.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3095,7 +2948,6 @@
     "condition": {
       "urlFilter": "||s.youtube.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3116,7 +2968,6 @@
     "condition": {
       "urlFilter": "||search.spotxchange.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3137,7 +2988,6 @@
     "condition": {
       "urlFilter": "||secure.adnxs.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3158,7 +3008,6 @@
     "condition": {
       "urlFilter": "||securepubads.g.doubleclick.net/gampad/ads^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3179,7 +3028,6 @@
     "condition": {
       "urlFilter": "||securepubads.g.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3200,7 +3048,6 @@
     "condition": {
       "urlFilter": "||servicer.mgid.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3221,7 +3068,6 @@
     "condition": {
       "urlFilter": "||sharethrough.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3242,7 +3088,6 @@
     "condition": {
       "urlFilter": "||simage2.pubmatic.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3263,7 +3108,6 @@
     "condition": {
       "urlFilter": "||sin3-ib.adnxs.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3284,7 +3128,6 @@
     "condition": {
       "urlFilter": "||smartadserver.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3305,7 +3148,6 @@
     "condition": {
       "urlFilter": "||smartyads.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3326,7 +3168,6 @@
     "condition": {
       "urlFilter": "||spotxchange.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3347,7 +3188,6 @@
     "condition": {
       "urlFilter": "||ssl.p.jwpcdn.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3368,7 +3208,6 @@
     "condition": {
       "urlFilter": "||sslwidget.criteo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3389,7 +3228,6 @@
     "condition": {
       "urlFilter": "||stackadapt.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3410,7 +3248,6 @@
     "condition": {
       "urlFilter": "||static.adsafeprotected.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3431,7 +3268,6 @@
     "condition": {
       "urlFilter": "||static.criteo.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3452,7 +3288,6 @@
     "condition": {
       "urlFilter": "||static.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3473,7 +3308,6 @@
     "condition": {
       "urlFilter": "||static.media.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3494,7 +3328,6 @@
     "condition": {
       "urlFilter": "||stats.g.doubleclick.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3515,7 +3348,6 @@
     "condition": {
       "urlFilter": "||stickyadstv.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3536,7 +3368,6 @@
     "condition": {
       "urlFilter": "||sync.kargo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3557,7 +3388,6 @@
     "condition": {
       "urlFilter": "||taboola.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3578,7 +3408,6 @@
     "condition": {
       "urlFilter": "||tlx.3lift.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3599,7 +3428,6 @@
     "condition": {
       "urlFilter": "||tpc.googlesyndication.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3620,7 +3448,6 @@
     "condition": {
       "urlFilter": "||tps.doubleverify.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3641,7 +3468,6 @@
     "condition": {
       "urlFilter": "||trc.taboola.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3662,7 +3488,6 @@
     "condition": {
       "urlFilter": "||tremorhub.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3683,7 +3508,6 @@
     "condition": {
       "urlFilter": "||u.openx.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3704,7 +3528,6 @@
     "condition": {
       "urlFilter": "||udc.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3725,7 +3548,6 @@
     "condition": {
       "urlFilter": "||udcm.yahoo.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3746,7 +3568,6 @@
     "condition": {
       "urlFilter": "||unityads.unity3d.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3767,7 +3588,6 @@
     "condition": {
       "urlFilter": "||us-ads.openx.net^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3788,7 +3608,6 @@
     "condition": {
       "urlFilter": "||vid.connatix.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3809,7 +3628,6 @@
     "condition": {
       "urlFilter": "||vungle.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3830,7 +3648,6 @@
     "condition": {
       "urlFilter": "||wd.adcolony.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3851,7 +3668,6 @@
     "condition": {
       "urlFilter": "||webview.unityads.unity3d.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3872,7 +3688,6 @@
     "condition": {
       "urlFilter": "||widgets.outbrain.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",
@@ -3893,7 +3708,6 @@
     "condition": {
       "urlFilter": "||ws-na.amazon-adsystem.com^",
       "resourceTypes": [
-        "main_frame",
         "sub_frame",
         "script",
         "image",

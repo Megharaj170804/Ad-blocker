@@ -1,4 +1,4 @@
-import { MESSAGE_TYPES, RULESET_IDS } from '@/constants';
+import { isProtectedDomain, MESSAGE_TYPES, RULESET_IDS } from '@/constants';
 import {
   getSettings,
   saveSettings,
@@ -128,28 +128,6 @@ chrome.tabs.onActivated.addListener(async (activeInfo) => {
 });
 
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
-  const currentUrl = changeInfo.url || tab.url;
-  if (currentUrl && currentUrl.startsWith('http')) {
-    try {
-      const settings = await getSettings();
-      if (settings.enabled && (settings.blockPopups || settings.blockAdRedirects)) {
-        if (isKnownAdOrRedirectUrl(currentUrl)) {
-          const urlObj = new URL(currentUrl);
-          const host = urlObj.hostname;
-          if (!isHostnameAllowlisted(host, settings)) {
-            await incrementStats('popup', host, 1);
-            if (tab.openerTabId) {
-              await chrome.tabs.remove(tabId);
-              return;
-            }
-          }
-        }
-      }
-    } catch {
-      // Ignored
-    }
-  }
-
   if (changeInfo.status === 'complete' && tab.url && tab.url.startsWith('http')) {
     const hostname = new URL(tab.url).hostname;
     await updateActionBadge(tabId, hostname);
@@ -191,8 +169,11 @@ if (chrome.webNavigation?.onCreatedNavigationTarget) {
 
       const targetUrl = details.url;
       if (isKnownAdOrRedirectUrl(targetUrl)) {
-        await chrome.tabs.remove(details.tabId);
-        await incrementStats('popup');
+        const host = new URL(targetUrl).hostname;
+        if (!isHostnameAllowlisted(host, settings) && !isProtectedDomain(host)) {
+          await chrome.tabs.remove(details.tabId);
+          await incrementStats('popup', host, 1);
+        }
       }
     } catch {
       // Tab may already be closed or restricted
@@ -213,20 +194,17 @@ if (chrome.webNavigation?.onBeforeNavigate) {
       if (isKnownAdOrRedirectUrl(targetUrl)) {
         const urlObj = new URL(targetUrl);
         const host = urlObj.hostname;
-        if (!isHostnameAllowlisted(host, settings)) {
+        if (!isHostnameAllowlisted(host, settings) && !isProtectedDomain(host)) {
           await incrementStats('redirect', host, 1);
 
-          // Neutralize or close the tab navigating to the ad network
+          // Close the tab ONLY if it was spawned as an opener popup without user history
           try {
             const tab = await chrome.tabs.get(details.tabId);
-            // If tab was spawned without navigation history or as a popup, close it
-            if (!tab.openerTabId) {
-              await chrome.tabs.update(details.tabId, { url: 'about:blank' });
-            } else {
+            if (tab.openerTabId) {
               await chrome.tabs.remove(details.tabId);
             }
           } catch {
-            await chrome.tabs.update(details.tabId, { url: 'about:blank' });
+            // Ignored
           }
         }
       }

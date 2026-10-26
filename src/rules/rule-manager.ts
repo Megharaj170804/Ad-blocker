@@ -1,4 +1,4 @@
-import { RULE_CONFIG, RULESET_IDS } from '@/constants';
+import { ESSENTIAL_PRODUCTIVITY_DOMAINS, isProtectedDomain, RULE_CONFIG, RULESET_IDS } from '@/constants';
 import { ExtensionSettings, DeclarativeRule } from '@/types';
 import { sanitizeDomain } from '@/rules/filter-list-manager';
 
@@ -128,7 +128,8 @@ export async function syncDnrRules(settings: ExtensionSettings): Promise<void> {
       return;
     }
 
-    const allowlistRules = buildAllowlistRules(settings.allowlist);
+    const combinedAllowlist = Array.from(new Set([...settings.allowlist, ...ESSENTIAL_PRODUCTIVITY_DOMAINS]));
+    const allowlistRules = buildAllowlistRules(combinedAllowlist);
     const customRules = buildCustomRules(settings.customRules);
 
     const newRules = [...allowlistRules, ...customRules].slice(0, RULE_CONFIG.MAX_DYNAMIC_RULES);
@@ -164,7 +165,7 @@ export function simulateRuleMatch(
       return host === clean || host.endsWith(`.${clean}`);
     });
 
-    if (isAllowed) {
+    if (isAllowed || isProtectedDomain(host)) {
       return { matched: true, ruleType: 'allowlist', pattern: host };
     }
   } catch {

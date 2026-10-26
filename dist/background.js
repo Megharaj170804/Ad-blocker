@@ -1,8 +1,8 @@
-const S = {
+const R = {
   SETTINGS: "padb_settings",
   STATS: "padb_statistics",
   RULE_STATUS: "padb_rule_status"
-}, m = {
+}, u = {
   EASYLIST: "ruleset_easylist",
   EASYPRIVACY: "ruleset_easyprivacy",
   ANNOYANCES: "ruleset_annoyances"
@@ -14,7 +14,7 @@ const S = {
   PRIORITY_NORMAL_BLOCK: 1,
   PRIORITY_CUSTOM_BLOCK: 2,
   PRIORITY_ALLOWLIST_EXCEPTION: 3
-}, g = {
+}, P = {
   FETCH_TIMEOUT_MS: 12e3,
   DEFAULT_MAX_RULES_PARSED: 2500
 }, M = [
@@ -68,11 +68,33 @@ const S = {
   "cpmstar.com",
   "cissoiddownset.com",
   "vr.cissoiddownset.com"
-], J = [
-  /[?&]utm_medium=(display|cpc|banner|affiliate)/i,
+], tt = [
+  /[?&]utm_medium=(display|cpc|banner)/i,
   /[?&]utm_source=([^&]+)&utm_medium=display/i,
-  /[?&](aff_id|affid|clickid|ad_id|adid|gclid|fbclid)=/i
-], u = {
+  /[?&](aff_id|clickid)=/i
+], H = [
+  "chatgpt.com",
+  "openai.com",
+  "oaistatic.com",
+  "oaiusercontent.com",
+  "anthropic.com",
+  "claude.ai",
+  "github.com",
+  "google.com",
+  "accounts.google.com",
+  "docs.google.com",
+  "drive.google.com",
+  "microsoft.com",
+  "apple.com"
+];
+function K(t) {
+  if (!t) return !1;
+  const e = t.trim().toLowerCase().replace(/^www\./, "");
+  return H.some(
+    (s) => e === s || e.endsWith(`.${s}`)
+  );
+}
+const d = {
   GET_PAGE_STATUS: "GET_PAGE_STATUS",
   PAGE_STATUS_RESPONSE: "PAGE_STATUS_RESPONSE",
   TOGGLE_GLOBAL_PROTECTION: "TOGGLE_GLOBAL_PROTECTION",
@@ -85,9 +107,9 @@ const S = {
   RESET_STATISTICS: "RESET_STATISTICS",
   UPDATE_FILTER_LIST: "UPDATE_FILTER_LIST",
   TEST_RULE_SIMULATION: "TEST_RULE_SIMULATION"
-}, Q = [
+}, et = [
   {
-    id: m.EASYLIST,
+    id: u.EASYLIST,
     name: "EasyList Primary Ads",
     description: "Blocks common web advertising, video banners, pop-unders, and sponsored links.",
     url: "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_general_block.txt",
@@ -95,7 +117,7 @@ const S = {
     enabled: !0
   },
   {
-    id: m.EASYPRIVACY,
+    id: u.EASYPRIVACY,
     name: "EasyPrivacy Trackers",
     description: "Blocks behavioral tracking, telemetry beacons, and fingerprinting scripts.",
     url: "https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_general.txt",
@@ -103,14 +125,14 @@ const S = {
     enabled: !0
   },
   {
-    id: m.ANNOYANCES,
+    id: u.ANNOYANCES,
     name: "Annoyances & Overlays",
     description: "Blocks newsletter prompts, anti-adblock dialogs, and intrusive full-page overlays.",
     url: "https://raw.githubusercontent.com/easylist/easylist/master/fanboy-addon/fanboy-annoyance.txt",
     category: "annoyances",
     enabled: !0
   }
-], Z = {
+], st = {
   SYSTEM: "system"
 }, F = {
   enabled: !0,
@@ -126,12 +148,12 @@ const S = {
   allowlist: [],
   customRules: [],
   enabledLists: [
-    m.EASYLIST,
-    m.EASYPRIVACY,
-    m.ANNOYANCES
+    u.EASYLIST,
+    u.EASYPRIVACY,
+    u.ANNOYANCES
   ],
-  theme: Z.SYSTEM
-}, P = {
+  theme: st.SYSTEM
+}, D = {
   totalBlockedRequests: 0,
   sessionBlockedRequests: 0,
   trackersBlocked: 0,
@@ -141,7 +163,7 @@ const S = {
   clicksProtected: 0,
   antiAdblockDefused: 0,
   siteStats: {}
-}, tt = Q.map((t) => ({
+}, at = et.map((t) => ({
   id: t.id,
   name: t.name,
   description: t.description,
@@ -153,12 +175,12 @@ const S = {
   lastUpdateStatus: "idle"
 }));
 let B = {};
-function H() {
+function X() {
   var t;
   return typeof chrome < "u" && !!((t = chrome.storage) != null && t.local);
 }
-async function D(t, e) {
-  if (H())
+async function U(t, e) {
+  if (X())
     try {
       return (await chrome.storage.local.get(t))[t] ?? e;
     } catch {
@@ -166,8 +188,8 @@ async function D(t, e) {
     }
   return B[t] ?? e;
 }
-async function h(t, e) {
-  if (H()) {
+async function L(t, e) {
+  if (X()) {
     try {
       await chrome.storage.local.set({ [t]: e });
     } catch {
@@ -177,108 +199,108 @@ async function h(t, e) {
   }
   B[t] = e;
 }
-async function d() {
-  const t = await D(S.SETTINGS, F);
+async function m() {
+  const t = await U(R.SETTINGS, F);
   return { ...F, ...t };
 }
 async function Y(t) {
-  const s = { ...await d(), ...t };
-  return await h(S.SETTINGS, s), s;
+  const s = { ...await m(), ...t };
+  return await L(R.SETTINGS, s), s;
 }
-async function L() {
-  const t = await D(S.STATS, P);
-  return { ...P, ...t, siteStats: t.siteStats ?? {} };
+async function I() {
+  const t = await U(R.STATS, D);
+  return { ...D, ...t, siteStats: t.siteStats ?? {} };
 }
-async function et() {
-  await h(S.STATS, P);
+async function ot() {
+  await L(R.STATS, D);
 }
-async function b(t, e, s = 1) {
-  const r = await L(), a = e == null ? void 0 : e.trim().toLowerCase(), i = { ...r.siteStats };
+async function T(t, e, s = 1) {
+  const o = await I(), a = e == null ? void 0 : e.trim().toLowerCase(), c = { ...o.siteStats };
   if (a) {
-    const o = i[a] ?? {
+    const i = c[a] ?? {
       blockedRequests: 0,
       elementsHidden: 0,
       redirectsBlocked: 0,
       popupsBlocked: 0,
       antiAdblockDefused: 0
     };
-    i[a] = {
-      blockedRequests: t === "cosmetic" ? o.blockedRequests : o.blockedRequests + s,
-      elementsHidden: t === "cosmetic" ? o.elementsHidden + s : o.elementsHidden,
-      redirectsBlocked: t === "redirect" ? (o.redirectsBlocked ?? 0) + s : o.redirectsBlocked ?? 0,
-      popupsBlocked: t === "popup" ? (o.popupsBlocked ?? 0) + s : o.popupsBlocked ?? 0,
-      antiAdblockDefused: t === "stealth" ? (o.antiAdblockDefused ?? 0) + s : o.antiAdblockDefused ?? 0
+    c[a] = {
+      blockedRequests: t === "cosmetic" ? i.blockedRequests : i.blockedRequests + s,
+      elementsHidden: t === "cosmetic" ? i.elementsHidden + s : i.elementsHidden,
+      redirectsBlocked: t === "redirect" ? (i.redirectsBlocked ?? 0) + s : i.redirectsBlocked ?? 0,
+      popupsBlocked: t === "popup" ? (i.popupsBlocked ?? 0) + s : i.popupsBlocked ?? 0,
+      antiAdblockDefused: t === "stealth" ? (i.antiAdblockDefused ?? 0) + s : i.antiAdblockDefused ?? 0
     };
   }
-  const c = t === "network" || t === "tracker" || t === "redirect", n = {
-    totalBlockedRequests: c ? r.totalBlockedRequests + s : r.totalBlockedRequests,
-    sessionBlockedRequests: c ? r.sessionBlockedRequests + s : r.sessionBlockedRequests,
-    trackersBlocked: t === "tracker" ? r.trackersBlocked + s : r.trackersBlocked,
-    cosmeticElementsHidden: t === "cosmetic" ? r.cosmeticElementsHidden + s : r.cosmeticElementsHidden,
-    redirectsBlocked: t === "redirect" ? r.redirectsBlocked + s : r.redirectsBlocked,
-    popupsBlocked: t === "popup" ? r.popupsBlocked + s : r.popupsBlocked,
-    clicksProtected: t === "click" ? r.clicksProtected + s : r.clicksProtected,
-    antiAdblockDefused: t === "stealth" ? r.antiAdblockDefused + s : r.antiAdblockDefused,
-    siteStats: i
+  const r = t === "network" || t === "tracker" || t === "redirect", n = {
+    totalBlockedRequests: r ? o.totalBlockedRequests + s : o.totalBlockedRequests,
+    sessionBlockedRequests: r ? o.sessionBlockedRequests + s : o.sessionBlockedRequests,
+    trackersBlocked: t === "tracker" ? o.trackersBlocked + s : o.trackersBlocked,
+    cosmeticElementsHidden: t === "cosmetic" ? o.cosmeticElementsHidden + s : o.cosmeticElementsHidden,
+    redirectsBlocked: t === "redirect" ? o.redirectsBlocked + s : o.redirectsBlocked,
+    popupsBlocked: t === "popup" ? o.popupsBlocked + s : o.popupsBlocked,
+    clicksProtected: t === "click" ? o.clicksProtected + s : o.clicksProtected,
+    antiAdblockDefused: t === "stealth" ? o.antiAdblockDefused + s : o.antiAdblockDefused,
+    siteStats: c
   };
-  await h(S.STATS, n);
+  await L(R.STATS, n);
 }
-async function K() {
-  return await D(S.RULE_STATUS, tt);
+async function $() {
+  return await U(R.RULE_STATUS, at);
 }
-async function st(t) {
-  await h(S.RULE_STATUS, t);
+async function ct(t) {
+  await L(R.RULE_STATUS, t);
 }
 async function C(t, e) {
-  const r = (await K()).map((a) => a.id === t ? { ...a, ...e } : a);
-  await st(r);
+  const o = (await $()).map((a) => a.id === t ? { ...a, ...e } : a);
+  await ct(o);
 }
-function k(t, e) {
+function A(t, e) {
   if (!t || !e.allowlist || e.allowlist.length === 0)
     return !1;
   const s = t.trim().toLowerCase().replace(/^www\./, "");
-  return e.allowlist.some((r) => {
-    const a = r.trim().toLowerCase().replace(/^www\./, "");
+  return e.allowlist.some((o) => {
+    const a = o.trim().toLowerCase().replace(/^www\./, "");
     return s === a || s.endsWith(`.${a}`);
   });
 }
-function at(t) {
+function rt(t) {
   let e = t.trim().toLowerCase();
   return e = e.replace(/^https?:\/\//i, ""), e = e.split("/")[0], e = e.split("?")[0], e = e.split("#")[0], e = e.split(":")[0], e = e.replace(/^www\./, ""), e;
 }
-function rt(t, e = p.DYNAMIC_DOWNLOAD_RULE_BASE_ID, s = g.DEFAULT_MAX_RULES_PARSED) {
-  var c, n;
-  const r = t.split(/\r?\n/), a = [];
-  let i = e;
-  for (const o of r) {
+function it(t, e = p.DYNAMIC_DOWNLOAD_RULE_BASE_ID, s = P.DEFAULT_MAX_RULES_PARSED) {
+  var r, n;
+  const o = t.split(/\r?\n/), a = [];
+  let c = e;
+  for (const i of o) {
     if (a.length >= s) break;
-    const l = o.trim();
+    const l = i.trim();
     if (!l || l.startsWith("!") || l.startsWith("[Adblock") || l.startsWith("(") || l.includes("##") || l.includes("#@#") || l.includes("#?#"))
       continue;
-    const E = l.startsWith("@@"), N = (E ? l.slice(2) : l).split("$"), f = ((c = N[0]) == null ? void 0 : c.trim()) || "", v = ((n = N[1]) == null ? void 0 : n.trim()) || "";
+    const S = l.startsWith("@@"), N = (S ? l.slice(2) : l).split("$"), f = ((r = N[0]) == null ? void 0 : r.trim()) || "", v = ((n = N[1]) == null ? void 0 : n.trim()) || "";
     if (!f || f.startsWith("/") && f.endsWith("/"))
       continue;
-    const _ = [];
-    let A;
-    const I = [], O = [];
+    const w = [];
+    let h;
+    const O = [], g = [];
     if (v) {
-      const $ = v.split(",");
-      for (const V of $) {
-        const T = V.trim().toLowerCase();
-        if (T === "script") _.push("script");
-        else if (T === "image") _.push("image");
-        else if (T === "xmlhttprequest" || T === "xhr") _.push("xmlhttprequest");
-        else if (T === "subdocument") _.push("sub_frame");
-        else if (T === "third-party") A = !0;
-        else if (T === "~third-party") A = !1;
-        else if (T.startsWith("domain=")) {
-          const z = T.slice(7).split("|");
-          for (const y of z)
-            y.startsWith("~") ? O.push(y.slice(1)) : I.push(y);
+      const J = v.split(",");
+      for (const Q of J) {
+        const E = Q.trim().toLowerCase();
+        if (E === "script") w.push("script");
+        else if (E === "image") w.push("image");
+        else if (E === "xmlhttprequest" || E === "xhr") w.push("xmlhttprequest");
+        else if (E === "subdocument") w.push("sub_frame");
+        else if (E === "third-party") h = !0;
+        else if (E === "~third-party") h = !1;
+        else if (E.startsWith("domain=")) {
+          const Z = E.slice(7).split("|");
+          for (const y of Z)
+            y.startsWith("~") ? g.push(y.slice(1)) : O.push(y);
         }
       }
     }
-    const j = _.length > 0 ? _ : [
+    const V = w.length > 0 ? w : [
       "sub_frame",
       "script",
       "image",
@@ -286,71 +308,71 @@ function rt(t, e = p.DYNAMIC_DOWNLOAD_RULE_BASE_ID, s = g.DEFAULT_MAX_RULES_PARS
       "ping",
       "media",
       "other"
-    ], X = {
-      id: i++,
-      priority: E ? p.PRIORITY_ALLOWLIST_EXCEPTION : p.PRIORITY_NORMAL_BLOCK,
+    ], z = {
+      id: c++,
+      priority: S ? p.PRIORITY_ALLOWLIST_EXCEPTION : p.PRIORITY_NORMAL_BLOCK,
       action: {
-        type: E ? "allow" : "block"
+        type: S ? "allow" : "block"
       },
       condition: {
         urlFilter: f,
-        resourceTypes: j,
-        ...I.length > 0 ? { domains: I } : {},
-        ...O.length > 0 ? { excludedDomains: O } : {},
-        ...A !== void 0 ? { domainType: A ? "thirdParty" : "firstParty" } : {}
+        resourceTypes: V,
+        ...O.length > 0 ? { domains: O } : {},
+        ...g.length > 0 ? { excludedDomains: g } : {},
+        ...h !== void 0 ? { domainType: h ? "thirdParty" : "firstParty" } : {}
       }
     };
-    a.push(X);
+    a.push(z);
   }
   return a;
 }
-async function it(t, e = p.DYNAMIC_DOWNLOAD_RULE_BASE_ID, s = g.DEFAULT_MAX_RULES_PARSED) {
-  const r = new AbortController(), a = setTimeout(() => r.abort(), g.FETCH_TIMEOUT_MS);
+async function nt(t, e = p.DYNAMIC_DOWNLOAD_RULE_BASE_ID, s = P.DEFAULT_MAX_RULES_PARSED) {
+  const o = new AbortController(), a = setTimeout(() => o.abort(), P.FETCH_TIMEOUT_MS);
   try {
-    const i = await fetch(t, {
-      signal: r.signal,
+    const c = await fetch(t, {
+      signal: o.signal,
       headers: {
         Accept: "text/plain, text/x-adblock, application/octet-stream, */*"
       }
     });
-    if (clearTimeout(a), !i.ok)
+    if (clearTimeout(a), !c.ok)
       return {
         success: !1,
         rules: [],
         ruleCount: 0,
-        error: `HTTP Error: ${i.status} ${i.statusText}`
+        error: `HTTP Error: ${c.status} ${c.statusText}`
       };
-    const c = await i.text();
-    if (!c || c.trim().length === 0)
+    const r = await c.text();
+    if (!r || r.trim().length === 0)
       return {
         success: !1,
         rules: [],
         ruleCount: 0,
         error: "Received empty response from filter list server"
       };
-    const n = rt(c, e, s);
+    const n = it(r, e, s);
     return {
       success: !0,
       rules: n,
       ruleCount: n.length
     };
-  } catch (i) {
+  } catch (c) {
     clearTimeout(a);
-    const c = i instanceof Error ? i.message : "Unknown network failure";
+    const r = c instanceof Error ? c.message : "Unknown network failure";
     return {
       success: !1,
       rules: [],
       ruleCount: 0,
-      error: c
+      error: r
     };
   }
 }
-function ct() {
+function lt() {
   return typeof chrome < "u" && !!chrome.declarativeNetRequest;
 }
-function ot(t) {
+function dt(t) {
   return t.map((e, s) => {
-    const r = at(e);
+    const o = rt(e);
     return {
       id: p.ALLOWLIST_RULE_BASE_ID + s,
       priority: p.PRIORITY_ALLOWLIST_EXCEPTION,
@@ -358,7 +380,7 @@ function ot(t) {
         type: "allowAllRequests"
       },
       condition: {
-        initiatorDomains: [r],
+        initiatorDomains: [o],
         resourceTypes: [
           "main_frame",
           "sub_frame"
@@ -367,17 +389,17 @@ function ot(t) {
     };
   });
 }
-function nt(t) {
+function ut(t) {
   return t.filter((e) => e.enabled).map((e, s) => {
-    const r = e.action === "allow", a = e.pattern.trim(), i = a.includes("/") || a.includes("*") || a.includes("^") ? a : `||${a}^`;
+    const o = e.action === "allow", a = e.pattern.trim(), c = a.includes("/") || a.includes("*") || a.includes("^") ? a : `||${a}^`;
     return {
       id: p.CUSTOM_BLOCK_RULE_BASE_ID + s,
-      priority: r ? p.PRIORITY_ALLOWLIST_EXCEPTION : p.PRIORITY_CUSTOM_BLOCK,
+      priority: o ? p.PRIORITY_ALLOWLIST_EXCEPTION : p.PRIORITY_CUSTOM_BLOCK,
       action: {
-        type: r ? "allow" : "block"
+        type: o ? "allow" : "block"
       },
       condition: {
-        urlFilter: i,
+        urlFilter: c,
         resourceTypes: [
           "sub_frame",
           "script",
@@ -391,94 +413,94 @@ function nt(t) {
     };
   });
 }
-async function w(t) {
-  if (ct())
+async function k(t) {
+  if (lt())
     try {
       const e = t.enabled && t.networkFilteringEnabled, s = [
-        m.EASYLIST,
-        m.EASYPRIVACY,
-        m.ANNOYANCES
+        u.EASYLIST,
+        u.EASYPRIVACY,
+        u.ANNOYANCES
       ];
       if (!e)
         await chrome.declarativeNetRequest.updateEnabledRulesets({
           disableRulesetIds: s
         });
       else {
-        const o = [], l = [];
-        for (const E of s) {
-          if (E === m.EASYPRIVACY && !t.trackerBlockingEnabled) {
-            l.push(E);
+        const l = [], S = [];
+        for (const _ of s) {
+          if (_ === u.EASYPRIVACY && !t.trackerBlockingEnabled) {
+            S.push(_);
             continue;
           }
-          t.enabledLists.includes(E) ? o.push(E) : l.push(E);
+          t.enabledLists.includes(_) ? l.push(_) : S.push(_);
         }
         await chrome.declarativeNetRequest.updateEnabledRulesets({
-          enableRulesetIds: o,
-          disableRulesetIds: l
+          enableRulesetIds: l,
+          disableRulesetIds: S
         });
       }
-      const a = (await chrome.declarativeNetRequest.getDynamicRules()).map((o) => o.id);
+      const a = (await chrome.declarativeNetRequest.getDynamicRules()).map((l) => l.id);
       if (!e) {
         a.length > 0 && await chrome.declarativeNetRequest.updateDynamicRules({
           removeRuleIds: a
         });
         return;
       }
-      const i = ot(t.allowlist), c = nt(t.customRules), n = [...i, ...c].slice(0, p.MAX_DYNAMIC_RULES);
+      const c = Array.from(/* @__PURE__ */ new Set([...t.allowlist, ...H])), r = dt(c), n = ut(t.customRules), i = [...r, ...n].slice(0, p.MAX_DYNAMIC_RULES);
       await chrome.declarativeNetRequest.updateDynamicRules({
         removeRuleIds: a,
-        addRules: n
+        addRules: i
       });
     } catch (e) {
       const s = e instanceof Error ? e.message : "Unknown DNR error";
       throw new Error(`Failed to update declarative blocking rules: ${s}`);
     }
 }
-function U(t) {
+function j(t) {
   if (!t || typeof t != "string") return !1;
   const e = t.trim().toLowerCase();
   if (e.startsWith("#") || e.startsWith("javascript:void") || e === "about:blank")
     return !1;
-  if (J.some((s) => s.test(e)))
+  if (tt.some((s) => s.test(e)))
     return !0;
   try {
-    const r = new URL(e.startsWith("http") ? e : `https://${e}`).hostname.replace(/^www\./, "");
-    return M.some((a) => r === a || r.endsWith(`.${a}`));
+    const o = new URL(e.startsWith("http") ? e : `https://${e}`).hostname.replace(/^www\./, "");
+    return M.some((a) => o === a || o.endsWith(`.${a}`));
   } catch {
     return M.some((s) => e.includes(s));
   }
 }
-async function R(t, e) {
+async function b(t, e) {
   try {
-    const s = await d();
+    const s = await m();
     if (!s.enabled) {
       await chrome.action.setBadgeText({ text: "OFF", tabId: t }), await chrome.action.setBadgeBackgroundColor({ color: "#6b7280", tabId: t });
       return;
     }
-    if (e && k(e, s)) {
+    if (e && A(e, s)) {
       await chrome.action.setBadgeText({ text: "PAUSE", tabId: t }), await chrome.action.setBadgeBackgroundColor({ color: "#f59e0b", tabId: t });
       return;
     }
-    const r = await L(), a = e && r.siteStats[e] ? r.siteStats[e].blockedRequests + r.siteStats[e].elementsHidden + (r.siteStats[e].redirectsBlocked ?? 0) + (r.siteStats[e].popupsBlocked ?? 0) : 0, i = a > 0 ? a > 999 ? "999+" : String(a) : "ON";
-    await chrome.action.setBadgeText({ text: i, tabId: t }), await chrome.action.setBadgeBackgroundColor({ color: "#10b981", tabId: t });
+    const o = await I(), a = e && o.siteStats[e] ? o.siteStats[e].blockedRequests + o.siteStats[e].elementsHidden + (o.siteStats[e].redirectsBlocked ?? 0) + (o.siteStats[e].popupsBlocked ?? 0) : 0, c = a > 0 ? a > 999 ? "999+" : String(a) : "ON";
+    await chrome.action.setBadgeText({ text: c, tabId: t }), await chrome.action.setBadgeBackgroundColor({ color: "#10b981", tabId: t });
   } catch {
   }
 }
 async function G() {
-  const t = await d(), e = await L(), s = await chrome.tabs.query({ url: ["http://*/*", "https://*/*"] });
-  for (const r of s)
-    if (!(!r.id || !r.url))
+  const t = await m(), e = await I(), s = await chrome.tabs.query({ url: ["http://*/*", "https://*/*"] });
+  for (const o of s)
+    if (!(!o.id || !o.url))
       try {
-        const i = new URL(r.url).hostname, c = k(i, t), n = e.siteStats[i] ?? {
+        const c = new URL(o.url).hostname, r = A(c, t), n = e.siteStats[c] ?? {
           blockedRequests: 0,
           elementsHidden: 0,
           redirectsBlocked: 0,
           popupsBlocked: 0,
           antiAdblockDefused: 0
-        }, o = {
-          hostname: i,
+        }, i = {
+          hostname: c,
           isGloballyEnabled: t.enabled,
-          isSiteAllowlisted: c,
+          isSiteAllowlisted: r,
           cosmeticEnabled: t.cosmeticFilteringEnabled,
           networkEnabled: t.networkFilteringEnabled,
           trackerEnabled: t.trackerBlockingEnabled,
@@ -490,48 +512,35 @@ async function G() {
           stealthMode: t.stealthMode,
           siteStats: n
         };
-        await chrome.tabs.sendMessage(r.id, {
-          type: u.PAGE_STATUS_RESPONSE,
-          payload: o
-        }), await R(r.id, i);
+        await chrome.tabs.sendMessage(o.id, {
+          type: d.PAGE_STATUS_RESPONSE,
+          payload: i
+        }), await b(o.id, c);
       } catch {
       }
 }
 chrome.runtime.onInstalled.addListener(async () => {
-  const t = await d();
-  await w(t), await R();
+  const t = await m();
+  await k(t), await b();
 });
 chrome.runtime.onStartup.addListener(async () => {
-  const t = await d();
-  await w(t), await R();
+  const t = await m();
+  await k(t), await b();
 });
 chrome.tabs.onActivated.addListener(async (t) => {
   try {
     const e = await chrome.tabs.get(t.tabId);
     if (e.url && e.url.startsWith("http")) {
       const s = new URL(e.url).hostname;
-      await R(t.tabId, s);
+      await b(t.tabId, s);
     }
   } catch {
   }
 });
 chrome.tabs.onUpdated.addListener(async (t, e, s) => {
-  const r = e.url || s.url;
-  if (r && r.startsWith("http"))
-    try {
-      const a = await d();
-      if (a.enabled && (a.blockPopups || a.blockAdRedirects) && U(r)) {
-        const c = new URL(r).hostname;
-        if (!k(c, a) && (await b("popup", c, 1), s.openerTabId)) {
-          await chrome.tabs.remove(t);
-          return;
-        }
-      }
-    } catch {
-    }
   if (e.status === "complete" && s.url && s.url.startsWith("http")) {
-    const a = new URL(s.url).hostname;
-    await R(t, a);
+    const o = new URL(s.url).hostname;
+    await b(t, o);
   }
 });
 var q;
@@ -544,18 +553,21 @@ var q;
         s = new URL(e).hostname;
       } catch {
       }
-    const r = t.rule.rulesetId === m.EASYPRIVACY;
-    await b(r ? "tracker" : "network", s, 1), t.request.tabId && t.request.tabId > 0 && s && await R(t.request.tabId, s);
+    const o = t.rule.rulesetId === u.EASYPRIVACY;
+    await T(o ? "tracker" : "network", s, 1), t.request.tabId && t.request.tabId > 0 && s && await b(t.request.tabId, s);
   } catch {
   }
 });
 var x;
 (x = chrome.webNavigation) != null && x.onCreatedNavigationTarget && chrome.webNavigation.onCreatedNavigationTarget.addListener(async (t) => {
   try {
-    const e = await d();
+    const e = await m();
     if (!e.enabled || !e.blockPopups) return;
     const s = t.url;
-    U(s) && (await chrome.tabs.remove(t.tabId), await b("popup"));
+    if (j(s)) {
+      const o = new URL(s).hostname;
+      !A(o, e) && !K(o) && (await chrome.tabs.remove(t.tabId), await T("popup", o, 1));
+    }
   } catch {
   }
 });
@@ -563,17 +575,16 @@ var W;
 (W = chrome.webNavigation) != null && W.onBeforeNavigate && chrome.webNavigation.onBeforeNavigate.addListener(async (t) => {
   if (t.frameId === 0)
     try {
-      const e = await d();
+      const e = await m();
       if (!e.enabled || !e.blockAdRedirects) return;
       const s = t.url;
-      if (U(s)) {
+      if (j(s)) {
         const a = new URL(s).hostname;
-        if (!k(a, e)) {
-          await b("redirect", a, 1);
+        if (!A(a, e) && !K(a)) {
+          await T("redirect", a, 1);
           try {
-            (await chrome.tabs.get(t.tabId)).openerTabId ? await chrome.tabs.remove(t.tabId) : await chrome.tabs.update(t.tabId, { url: "about:blank" });
+            (await chrome.tabs.get(t.tabId)).openerTabId && await chrome.tabs.remove(t.tabId);
           } catch {
-            await chrome.tabs.update(t.tabId, { url: "about:blank" });
           }
         }
       }
@@ -581,17 +592,17 @@ var W;
     }
 });
 chrome.runtime.onMessage.addListener((t, e, s) => !t || !t.type ? !1 : ((async () => {
-  var r;
+  var o;
   switch (t.type) {
-    case u.GET_PAGE_STATUS: {
-      const a = await d(), i = await L(), c = t.hostname || "", n = k(c, a), o = i.siteStats[c] ?? {
+    case d.GET_PAGE_STATUS: {
+      const a = await m(), c = await I(), r = t.hostname || "", n = A(r, a), i = c.siteStats[r] ?? {
         blockedRequests: 0,
         elementsHidden: 0,
         redirectsBlocked: 0,
         popupsBlocked: 0,
         antiAdblockDefused: 0
       }, l = {
-        hostname: c,
+        hostname: r,
         isGloballyEnabled: a.enabled,
         isSiteAllowlisted: n,
         cosmeticEnabled: a.cosmeticFilteringEnabled,
@@ -603,61 +614,61 @@ chrome.runtime.onMessage.addListener((t, e, s) => !t || !t.type ? !1 : ((async (
         blockTrackingRedirects: a.blockTrackingRedirects,
         strictNavigation: a.strictNavigation,
         stealthMode: a.stealthMode,
-        siteStats: o
+        siteStats: i
       };
       s({ payload: l });
       break;
     }
-    case u.TOGGLE_GLOBAL_PROTECTION: {
-      const a = await d(), i = typeof t.enabled == "boolean" ? t.enabled : !a.enabled, c = await Y({ enabled: i });
-      await w(c), await G(), s({ success: !0, enabled: i });
+    case d.TOGGLE_GLOBAL_PROTECTION: {
+      const a = await m(), c = typeof t.enabled == "boolean" ? t.enabled : !a.enabled, r = await Y({ enabled: c });
+      await k(r), await G(), s({ success: !0, enabled: c });
       break;
     }
-    case u.TOGGLE_SITE_ALLOWLIST: {
-      const a = await d(), i = (r = t.hostname) == null ? void 0 : r.trim().toLowerCase();
-      if (!i) {
+    case d.TOGGLE_SITE_ALLOWLIST: {
+      const a = await m(), c = (o = t.hostname) == null ? void 0 : o.trim().toLowerCase();
+      if (!c) {
         s({ success: !1, error: "Invalid hostname" });
         return;
       }
-      let c;
-      t.allow ? c = Array.from(/* @__PURE__ */ new Set([...a.allowlist, i])) : c = a.allowlist.filter((o) => o.toLowerCase() !== i);
-      const n = await Y({ allowlist: c });
-      await w(n), await G(), s({ success: !0, allowlist: c });
+      let r;
+      t.allow ? r = Array.from(/* @__PURE__ */ new Set([...a.allowlist, c])) : r = a.allowlist.filter((i) => i.toLowerCase() !== c);
+      const n = await Y({ allowlist: r });
+      await k(n), await G(), s({ success: !0, allowlist: r });
       break;
     }
-    case u.REPORT_COSMETIC_BLOCKED: {
+    case d.REPORT_COSMETIC_BLOCKED: {
       const a = typeof t.count == "number" ? t.count : 1;
-      await b("cosmetic", t.hostname, a), s({ success: !0 });
+      await T("cosmetic", t.hostname, a), s({ success: !0 });
       break;
     }
-    case u.REPORT_REDIRECT_BLOCKED: {
-      await b("redirect", t.hostname, 1), s({ success: !0 });
+    case d.REPORT_REDIRECT_BLOCKED: {
+      await T("redirect", t.hostname, 1), s({ success: !0 });
       break;
     }
-    case u.REPORT_POPUP_BLOCKED: {
-      await b("popup", t.hostname, 1), s({ success: !0 });
+    case d.REPORT_POPUP_BLOCKED: {
+      await T("popup", t.hostname, 1), s({ success: !0 });
       break;
     }
-    case u.REPORT_CLICK_PROTECTED: {
-      await b("click", t.hostname, 1), s({ success: !0 });
+    case d.REPORT_CLICK_PROTECTED: {
+      await T("click", t.hostname, 1), s({ success: !0 });
       break;
     }
-    case u.REPORT_STEALTH_DEFUSED: {
-      await b("stealth", t.hostname, 1), s({ success: !0 });
+    case d.REPORT_STEALTH_DEFUSED: {
+      await T("stealth", t.hostname, 1), s({ success: !0 });
       break;
     }
-    case u.RESET_STATISTICS: {
-      await et(), await R(), s({ success: !0 });
+    case d.RESET_STATISTICS: {
+      await ot(), await b(), s({ success: !0 });
       break;
     }
-    case u.UPDATE_FILTER_LIST: {
-      const a = t.listId, c = (await K()).find((o) => o.id === a);
-      if (!c) {
+    case d.UPDATE_FILTER_LIST: {
+      const a = t.listId, r = (await $()).find((i) => i.id === a);
+      if (!r) {
         s({ success: !1, error: "Filter list not found" });
         return;
       }
       await C(a, { lastUpdateStatus: "updating" });
-      const n = await it(c.url);
+      const n = await nt(r.url);
       if (n.success) {
         await C(a, {
           lastUpdateStatus: "success",
@@ -665,8 +676,8 @@ chrome.runtime.onMessage.addListener((t, e, s) => !t || !t.type ? !1 : ((async (
           ruleCount: n.ruleCount,
           lastErrorMessage: void 0
         });
-        const o = await d();
-        await w(o), s({ success: !0, ruleCount: n.ruleCount });
+        const i = await m();
+        await k(i), s({ success: !0, ruleCount: n.ruleCount });
       } else
         await C(a, {
           lastUpdateStatus: "error",

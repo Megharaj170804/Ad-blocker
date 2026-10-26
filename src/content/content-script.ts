@@ -1,4 +1,4 @@
-import { MESSAGE_TYPES } from '@/constants';
+import { isProtectedDomain, MESSAGE_TYPES } from '@/constants';
 import { CosmeticFilterEngine } from '@/content/cosmetic-filter';
 import { RedirectAndPopupProtector } from '@/content/redirect-popup-blocker';
 import { PageStatusPayload } from '@/types';
@@ -8,6 +8,9 @@ let redirectProtector: RedirectAndPopupProtector | null = null;
 const currentHostname = window.location.hostname;
 
 function applyProtection(payload: PageStatusPayload): void {
+  if (isProtectedDomain(currentHostname)) {
+    return;
+  }
   const isProtected = payload.isGloballyEnabled && !payload.isSiteAllowlisted;
 
   // 1. Cosmetic Filtering Engine
