@@ -1,0 +1,2774 @@
+[
+  {
+    "id": 3001,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||a-ads.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3002,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||a.lenovo.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3003,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ad-delivery.net^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3004,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ad-score.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3005,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ad.lgappstv.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3006,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adbit.co^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3007,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adcash.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3008,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adlog.vivo.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3009,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||admaven.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3010,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adoperator.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3011,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ads-api.vivo.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3012,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ads.huawei.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3013,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ads.roku.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3014,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ads.vizio.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3015,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsfs.oppomobile.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3016,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsterra.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3017,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||advertising.apple.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3018,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adx.ads.oppomobile.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3019,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||amoeba.web.roku.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3020,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||analytics-api.samsunghealthcn.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3021,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||api-adservices.apple.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3022,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||api.ad.xiaomi.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3023,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||app.usercentrics.eu^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3024,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bdapi-ads.realmemobile.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3025,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bdapi-in-ads.realmemobile.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3026,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||bidvertiser.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3027,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||books-analytics-events.apple.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3028,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||browser.events.data.msn.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3029,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cdn.cookielaw.org^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3030,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cdn.privacy-mgmt.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3031,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cissoiddownset.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3032,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ck.ads.oppomobile.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3033,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||click.oneplus.cn^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3034,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clickadu.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3035,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||clickaine.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3036,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cmp.inmobi.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3037,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cmp.osano.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3038,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cmp.usercentrics.eu^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3039,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||coinimp.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3040,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||config.samsungads.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3041,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||consent.cookiebot.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3042,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||consent.trustarc.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3043,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||consentcdn.cookiebot.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3044,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cookiebot.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3045,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||cpmstar.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3046,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||data.ads.oppomobile.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3047,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||data.mistat.india.xiaomi.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3048,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||data.mistat.rus.xiaomi.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3049,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||data.mistat.xiaomi.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3050,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||deloton.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3051,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||device-metrics-us-2.amazon.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3052,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||device-metrics-us.amazon.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3053,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||directrev.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3054,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||effectivecpmgate.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3055,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||evadav.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3056,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||exoclick.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3057,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||firebase-settings.crashlytics.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3058,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||fundingchoicesmessages.google.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3059,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||geolocation.onetrust.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3060,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||globalapi.ad.xiaomi.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3061,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||grs.hicloud.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3062,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||highcpmgate.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3063,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||hilltopads.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3064,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||iadsdk.apple.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3065,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||info.lgsmartad.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3066,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||iot-eu-logser.realme.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3067,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||iot-logser.realme.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3068,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||juicyads.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3069,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||linkvertise.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3070,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logbak.hicloud.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3071,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logs.roku.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3072,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logservice.hicloud.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3073,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||logservice1.hicloud.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3074,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mads-eu.amazon.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3075,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||metrics.apple.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3076,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||metrics.data.hicloud.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3077,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||metrics.icloud.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3078,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||metrics.mzstatic.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3079,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||metrics2.data.hicloud.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3080,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mineralt.io^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3081,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||minero.cc^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3082,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||monerominer.rocks^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3083,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||monetag.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3084,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ngfts.lge.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3085,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||nmetrics.samsung.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3086,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||notes-analytics-events.apple.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3087,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||onclickalgo.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3088,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||onclickperformance.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3089,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||onesignal.com/sdks/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3090,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||open.oneplus.net^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3091,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||popads.net^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3092,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||popcash.net^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3093,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||popmyads.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3094,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||privacyportal.onetrust.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3095,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||propellerads.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3096,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||ptgnwm.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3097,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||pushassist.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3098,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||realsrv.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3099,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||revenuehits.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3100,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||richads.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3101,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||samsung-com.112.2o7.net^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3102,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||samsungads.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3103,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sdk.privacy-center.org^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3104,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sdkconfig.ad.intl.xiaomi.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3105,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sdkconfig.ad.xiaomi.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3106,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||settings-win.data.microsoft.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3107,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||smartclip.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3108,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||smartclip.net^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3109,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||smetrics.samsung.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3110,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||sourcepoint.mgr.consensu.org^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3111,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||statdynamic.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3112,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||telemetry.microsoft.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3113,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tr.iadsdk.apple.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3114,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracking.miui.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3115,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tracking.rus.miui.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3116,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||traffichaus.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3117,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||trafficjunky.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3118,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||trafficjunky.net^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3119,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tvinteractive.tv^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3120,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||tvpixel.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3121,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||us.ibs.lgappstv.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3122,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||us.info.lgsmartad.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3123,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vidoomy.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3124,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vortex-win.data.microsoft.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3125,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||vortex.data.microsoft.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3126,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||watson.telemetry.microsoft.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3127,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||webminepool.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3128,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||www.coinimp.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3129,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||xp.apple.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3130,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||yllix.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3131,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||yumenetworks.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3132,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||zeroredirect1.com^",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "script",
+        "image",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "other"
+      ]
+    }
+  }
+]

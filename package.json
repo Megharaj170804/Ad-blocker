@@ -1,0 +1,31 @@
+{
+  "name": "personal-adblocker",
+  "version": "1.0.0",
+  "description": "A high-performance personal ad-blocking Chrome extension built with React, TypeScript, and Manifest V3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build && vite build --config vite.background.config.ts && vite build --config vite.content.config.ts && vite build --config vite.stealth.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.280",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^20.17.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "jsdom": "^24.1.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
+}
