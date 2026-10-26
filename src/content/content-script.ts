@@ -1,11 +1,14 @@
 import { isProtectedDomain, MESSAGE_TYPES } from '@/constants';
 import { CosmeticFilterEngine } from '@/content/cosmetic-filter';
 import { RedirectAndPopupProtector } from '@/content/redirect-popup-blocker';
+import { YouTubeAdSkipper } from '@/content/youtube-ad-skipper';
 import { PageStatusPayload } from '@/types';
 
 let cosmeticEngine: CosmeticFilterEngine | null = null;
 let redirectProtector: RedirectAndPopupProtector | null = null;
+let youtubeSkipper: YouTubeAdSkipper | null = null;
 const currentHostname = window.location.hostname;
+const isYouTube = currentHostname.includes('youtube.com');
 
 function applyProtection(payload: PageStatusPayload): void {
   if (isProtectedDomain(currentHostname)) {
@@ -38,6 +41,19 @@ function applyProtection(payload: PageStatusPayload): void {
     if (redirectProtector) {
       redirectProtector.stop();
       redirectProtector = null;
+    }
+  }
+
+  // 3. YouTube Ad Skipper & Fast-Forward Player
+  if (isProtected && isYouTube) {
+    if (!youtubeSkipper) {
+      youtubeSkipper = new YouTubeAdSkipper();
+      youtubeSkipper.start();
+    }
+  } else {
+    if (youtubeSkipper) {
+      youtubeSkipper.stop();
+      youtubeSkipper = null;
     }
   }
 }

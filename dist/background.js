@@ -80,10 +80,12 @@ const R = {
   "anthropic.com",
   "claude.ai",
   "github.com",
-  "google.com",
   "accounts.google.com",
   "docs.google.com",
   "drive.google.com",
+  "mail.google.com",
+  "meet.google.com",
+  "calendar.google.com",
   "microsoft.com",
   "apple.com"
 ];

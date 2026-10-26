@@ -110,7 +110,7 @@ export const AD_CAMPAIGN_PARAM_PATTERNS: readonly RegExp[] = [
   /[?&](aff_id|clickid)=/i,
 ];
 
-// Essential productivity, AI, and developer domains that must NEVER be blocked or interfered with
+// Essential productivity, AI, and developer domains that must NEVER have main navigation or critical scripts blocked
 export const ESSENTIAL_PRODUCTIVITY_DOMAINS: readonly string[] = [
   'chatgpt.com',
   'openai.com',
@@ -119,10 +119,12 @@ export const ESSENTIAL_PRODUCTIVITY_DOMAINS: readonly string[] = [
   'anthropic.com',
   'claude.ai',
   'github.com',
-  'google.com',
   'accounts.google.com',
   'docs.google.com',
   'drive.google.com',
+  'mail.google.com',
+  'meet.google.com',
+  'calendar.google.com',
   'microsoft.com',
   'apple.com',
 ];
@@ -135,7 +137,7 @@ export function isProtectedDomain(hostname: string): boolean {
   );
 }
 
-// Selectors for Anti-Adblock banners and warning modals
+// Selectors for Anti-Adblock banners, warning modals, and full-screen click-stealing overlays
 export const ANTI_ADBLOCK_SELECTORS: readonly string[] = [
   '.warn-box',
   '[class*="warn-box"]',
@@ -145,11 +147,39 @@ export const ANTI_ADBLOCK_SELECTORS: readonly string[] = [
   '[id*="adblock-message"]',
   '.adblock-overlay',
   '#adblock-banner',
+  '[class*="bb-overlay"]',
+  '[id*="bb-overlay"]',
+  '.bookmark-banner-x7m4q2',
+  'tp-yt-paper-dialog:has(#feedback.ytd-enforcement-message-view-model)',
+  'ytd-enforcement-message-view-model',
 ];
+
+// YouTube-specific ad banner and overlay selectors
+export const YOUTUBE_AD_SELECTORS: readonly string[] = [
+  'ytd-ad-slot-renderer',
+  '#masthead-ad',
+  'ytd-banner-promo-renderer',
+  'ytd-in-feed-ad-layout-renderer',
+  '.ytd-promoted-video-renderer',
+  '.ytd-promoted-sparkles-web-renderer',
+  '.ytd-display-ad-renderer',
+  'ytd-statement-banner-renderer',
+  '.ytp-ad-overlay-container',
+  '.ytp-ad-message-container',
+  '#player-ads',
+];
+
+// YouTube Video Ad Acceleration Constants
+export const YOUTUBE_CONFIG = {
+  FAST_FORWARD_RATE: 16.0,
+  NORMAL_PLAYBACK_RATE: 1.0,
+  POLL_INTERVAL_MS: 250,
+} as const;
 
 // Selectors for legitimate content/download containers that anti-adblock scripts hide
 export const FORCE_UNHIDE_SELECTORS: readonly string[] = [
   '.download-links-div',
+  '.downloads-btns-div',
   '.warn-box ~ .download-links-div',
   '[class*="download-links"]',
   '[id*="download-links"]',

@@ -3,6 +3,7 @@ import {
   COSMETIC_CONFIG,
   FORCE_UNHIDE_SELECTORS,
   MESSAGE_TYPES,
+  YOUTUBE_AD_SELECTORS,
 } from '@/constants';
 
 // Curated high-precision selectors for ad containers and banners
@@ -29,6 +30,7 @@ export const AD_BANNER_SELECTORS: readonly string[] = [
   '.trc_related_container',
   '[class*="sticky-ad" i]',
   '[id*="sticky-ad" i]',
+  ...YOUTUBE_AD_SELECTORS,
 ];
 
 // Keywords indicating intrusive promotional overlays or anti-adblock modals
